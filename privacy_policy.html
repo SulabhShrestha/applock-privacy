@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AppLock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #1976D2;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .last-updated {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        h2 {
+            color: #1976D2;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #1976D2;
+        }
+
+        .highlight {
+            background-color: #E3F2FD;
+            padding: 15px;
+            border-left: 4px solid #1976D2;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .contact {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 30px;
+        }
+
+        a {
+            color: #1976D2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for AppLock</h1>
+        <p class="last-updated">Last updated: January 4, 2026</p>
+
+        <p>
+            This privacy policy explains how AppLock ("we", "our", or "the app") collects, uses,
+            and protects your information when you use our voice-based app locking application.
+        </p>
+
+        <div class="highlight">
+            <strong>Important:</strong> AppLock is designed with privacy in mind. All voice processing
+            happens locally on your device. We do not collect, store, or transmit your voice recordings
+            to any external servers.
+        </div>
+
+        <h2>1. Information We Collect</h2>
+        <p>AppLock collects and processes the following information:</p>
+        <ul>
+            <li><strong>Voice Data:</strong> When you use voice unlock, your device's microphone captures
+            audio input temporarily for speech recognition purposes.</li>
+            <li><strong>App Lock Settings:</strong> The list of apps you choose to lock and their
+            associated unlock phrases are stored locally on your device.</li>
+            <li><strong>App Usage Detection:</strong> The app monitors which apps are opened to determine
+            when to show the lock screen (processed entirely on your device).</li>
+        </ul>
+
+        <h2>2. How We Use Your Information</h2>
+        <p>The information collected is used exclusively for the following purposes:</p>
+        <ul>
+            <li><strong>Voice Recognition:</strong> Audio input is processed in real-time using Android's
+            built-in speech recognition service to match against your predefined unlock phrase.</li>
+            <li><strong>App Locking:</strong> Your app lock settings are used to determine which apps
+            require voice authentication.</li>
+            <li><strong>Security:</strong> Session management ensures apps stay unlocked only during
+            your current usage session.</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>No Data Transmission:</strong> Your voice recordings and app lock settings are NEVER
+            transmitted to our servers or any third parties. All processing happens locally on your device.
+        </div>
+
+        <h2>3. Data Storage and Security</h2>
+        <ul>
+            <li><strong>Local Storage Only:</strong> All app settings and unlock phrases are stored
+            locally in your device's secure storage using Android SharedPreferences.</li>
+            <li><strong>Voice Data:</strong> Voice recordings are processed in real-time and immediately
+            discarded. No voice data is stored on your device or transmitted externally.</li>
+            <li><strong>Session Data:</strong> Unlock sessions are stored temporarily in device memory
+            and cleared when you switch apps or restart your device.</li>
+        </ul>
+
+        <h2>4. Permissions Required</h2>
+        <p>AppLock requires the following Android permissions to function:</p>
+        <ul>
+            <li><strong>Microphone (RECORD_AUDIO):</strong> Required to capture voice input for
+            voice-based unlocking. Audio is processed locally and immediately discarded.</li>
+            <li><strong>Accessibility Service:</strong> Required to detect when locked apps are opened
+            and to monitor app switches. This service does not collect or transmit any data.</li>
+            <li><strong>Display Over Other Apps (SYSTEM_ALERT_WINDOW):</strong> Required to show the
+            lock screen overlay over locked apps.</li>
+            <li><strong>Battery Optimization Exclusion:</strong> Ensures the app continues monitoring
+            even when in the background.</li>
+            <li><strong>Query All Packages:</strong> Required to display the list of installed apps
+            for you to choose which ones to lock.</li>
+        </ul>
+
+        <h2>5. Third-Party Services</h2>
+        <p>
+            AppLock uses Android's built-in speech recognition service (Google Speech Services) for
+            voice processing. When you speak to unlock an app, the audio may be processed by Google's
+            speech recognition engine according to
+            <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.
+        </p>
+        <p>
+            We do not integrate any other third-party analytics, advertising, or tracking services.
+        </p>
+
+        <h2>6. Data Sharing</h2>
+        <p>
+            We do not share, sell, or disclose your personal information to any third parties.
+            All data remains on your device.
+        </p>
+
+        <h2>7. Children's Privacy</h2>
+        <p>
+            AppLock does not knowingly collect personal information from children under 13.
+            The app is intended for general audiences and does not target children.
+        </p>
+
+        <h2>8. Your Rights</h2>
+        <p>You have full control over your data:</p>
+        <ul>
+            <li><strong>Access:</strong> All your app lock settings are visible within the app.</li>
+            <li><strong>Deletion:</strong> You can unlock any app or clear all settings by uninstalling
+            the app, which removes all locally stored data.</li>
+            <li><strong>Control:</strong> You can revoke permissions at any time through your device's
+            Settings app.</li>
+        </ul>
+
+        <h2>9. Changes to This Privacy Policy</h2>
+        <p>
+            We may update this privacy policy from time to time. Any changes will be posted on this
+            page with an updated "Last updated" date. Continued use of the app after changes
+            constitutes acceptance of the updated policy.
+        </p>
+
+        <h2>10. Data Retention</h2>
+        <p>
+            App lock settings and unlock phrases are retained on your device until you:
+        </p>
+        <ul>
+            <li>Manually unlock an app within the AppLock interface</li>
+            <li>Clear the app's data through Android Settings</li>
+            <li>Uninstall the app</li>
+        </ul>
+        <p>
+            Voice recordings are never retained - they are processed in real-time and immediately discarded.
+        </p>
+
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>
+                If you have any questions, concerns, or requests regarding this privacy policy or
+                how AppLock handles your data, please contact us at:
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:support@applock.example.com">support@applock.example.com</a><br>
+                <strong>Developer:</strong> Sulabh Shrestha
+            </p>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #666;">
+                This privacy policy is effective as of January 4, 2026 and applies to all users of AppLock.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
